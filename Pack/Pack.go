@@ -2,10 +2,12 @@ package Pack
 
 import (
 	"bytes"
+	"errors"
 	"fmt"
 	"io"
 	"os"
 	"os/exec"
+	p "path"
 	"path/filepath"
 	"strings"
 	"text/template"
@@ -29,42 +31,50 @@ func NewMacApplication(name, icon string) ToApplication {
 }
 
 func Do(mac ToApplication) error {
+	defer func() {
+		if err := mac.Clear(); err != nil {
+			fmt.Println(fmt.Sprintf("💔 >> Application Consist Fail!!!"))
+		}
+	}()
+
 	fmt.Println(fmt.Sprintf("🎁 >> Step 1 FileSystem..."))
 	if err := mac.FileSystem(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> FileSystem Fail!!!"))
 		return err
 	}
 	fmt.Println(fmt.Sprintf("🎁 >> Step 1 FileSystem Done!"))
+
 	fmt.Println(fmt.Sprintf("🎉 >> Step 2 ICON Create..."))
 	if err := mac.ToICON(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> Application ICON Fail!!!"))
 		return err
 	}
 	fmt.Println(fmt.Sprintf("🎉 >> Step 2 ICON Done!"))
+
 	fmt.Println(fmt.Sprintf("🎈 >> Step 3 Info.plist..."))
 	if err := mac.InfoList(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> Application Info.plist Fail!!!"))
 		return err
 	}
 	fmt.Println(fmt.Sprintf("🎈 >> Step 3 Info.plist Done!"))
+
 	fmt.Println(fmt.Sprintf("📢 >> Step 4 Application Create..."))
 	if err := mac.ToApp(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> Application Bundle Fail!!!"))
 		return err
 	}
 	fmt.Println(fmt.Sprintf("📢 >> Step 4 Application Bundle Done!"))
-	fmt.Println(fmt.Sprintf("⌛ >> Step 5 Application DMG Create..."))
+
+	fmt.Println(fmt.Sprintf("⌛  >> Step 5 Application DMG Create..."))
 	if err := mac.ToDmg(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> Application DMG Create Fail!!!"))
 		return err
 	}
-	fmt.Println(fmt.Sprintf("⌛ >> Step 5 Application DMG Done!"))
+	fmt.Println(fmt.Sprintf("⌛  >> Step 5 Application DMG Done!"))
+
 	fmt.Println(fmt.Sprintf("🛁 >> Step 6 Application Consist Create..."))
-	if err := mac.Clear(); err != nil {
-		fmt.Println(fmt.Sprintf("💔 >> Application Consist Fail!!!"))
-		return err
-	}
 	fmt.Println(fmt.Sprintf("🛁 >> Step 6 Application Consist Done!"))
+
 	fmt.Println(fmt.Sprintf("💖 >> 💖💖💖💖💖💖"))
 	return nil
 }
@@ -185,6 +195,10 @@ const (
 func (m *macApplication) ToICON() (err error) {
 	path := filepath.Join("./", iconSet)
 	_ = os.MkdirAll(path, perm)
+	base := p.Ext(m.icon)
+	if base != ".png" {
+		return errors.New("图标需是 PNG 格式")
+	}
 	sizes := []int{64, 128, 256, 512}
 	for i, size := range sizes {
 		nameSize := size
@@ -193,7 +207,7 @@ func (m *macApplication) ToICON() (err error) {
 			nameSize = sizes[i-1]
 			suffix = "@2x"
 		}
-		cmd := exec.Command("sips", "-z", fmt.Sprintf("%d", size), fmt.Sprintf("%d", size), m.icon, "--out", filepath.Join(path, fmt.Sprintf("icon_%dx%d%s.png", nameSize, nameSize, suffix)))
+		cmd := exec.Command("sips", "-z", fmt.Sprintf("%d", size), fmt.Sprintf("%d", size), m.icon, "--out", filepath.Join(path, fmt.Sprintf("icon_%dx%d%s%s", nameSize, nameSize, suffix, base)))
 		cmd.Stderr = os.Stderr
 		err = cmd.Run()
 		if err != nil {
