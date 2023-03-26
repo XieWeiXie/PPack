@@ -8,9 +8,58 @@
 
 - 小，足够小
 
+<table>
+    <tr>
+        <th> APP </th>
+        <th> SIZE </th>
+        <th> LINK</th>
+    </tr>
+    <tr>
+        <td>WeRead</td>
+        <td>1.9MB</td>
+        <td> <a href="https://www.baidu.com">WeRead </a></td>
+    </tr>
+    <tr>
+        <td>DouYin</td>
+        <td>2.6MB</td>
+        <td> <a href="https://www.baidu.com">WeRead </a></td>
+    </tr>
+    <tr>
+        <td>Typst</td>
+        <td>1.9MB</td>
+        <td> <a href="https://www.baidu.com">WeRead </a></td>
+    </tr>
+    <tr>
+        <td>XiaoHongShu</td>
+        <td>1.9MB</td>
+        <td> <a href="https://www.baidu.com">WeRead </a></td>
+    </tr>
+</table>
+
 ## 示例
 
+<h4 > 常见打包示例 </h4>
+<p align="center" href="https://weread.qq.com/"> WeRead
+<br>
+<br>
+<img src="https://i.hd-r.cn/505e4632d06c9987bbca69f7a815d3ae.jpg">
+</p>
 
-<p>WeRead
-    <a href="https://github.com/tw93/Pake/releases/latest/download/WeRead.dmg">Mac</a>
+<p align="center" href="https://www.douyin.com/"> DouYin
+<br>
+<br>
+<img src="https://i.hd-r.cn/a6e7128f797ccb1b8cd16d64adffbab5.jpg">
+</p>
+
+
+<p align="center" href="https://typst.app/"> Typst
+<br>
+<br>
+<img src="https://i.hd-r.cn/ebb08696a60be3a8431135068afe475c.jpg">
+</p>
+
+<p align="center" href="https://www.xiaohongshu.com/"> XiaoHongShu
+<br>
+<br>
+<img src="https://i.hd-r.cn/93aa0d740282ef574047bc88457f2b21.jpg">
 </p>
