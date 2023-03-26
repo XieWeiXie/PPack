@@ -37,43 +37,43 @@ func Do(mac ToApplication) error {
 		}
 	}()
 
-	fmt.Println(fmt.Sprintf("🎁 >> Step 1 FileSystem..."))
+	fmt.Println(fmt.Sprintf("🎁 >> FileSystem..."))
 	if err := mac.FileSystem(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> FileSystem Fail!!!"))
 		return err
 	}
-	fmt.Println(fmt.Sprintf("🎁 >> Step 1 FileSystem Done!"))
+	fmt.Println(fmt.Sprintf("🎁 >> FileSystem Done!"))
 
-	fmt.Println(fmt.Sprintf("🎉 >> Step 2 ICON Create..."))
+	fmt.Println(fmt.Sprintf("🎉 >> ICON Create..."))
 	if err := mac.ToICON(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> Application ICON Fail!!!"))
 		return err
 	}
-	fmt.Println(fmt.Sprintf("🎉 >> Step 2 ICON Done!"))
+	fmt.Println(fmt.Sprintf("🎉 >> ICON Done!"))
 
-	fmt.Println(fmt.Sprintf("🎈 >> Step 3 Info.plist..."))
+	fmt.Println(fmt.Sprintf("🎈 >> Info.plist..."))
 	if err := mac.InfoList(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> Application Info.plist Fail!!!"))
 		return err
 	}
-	fmt.Println(fmt.Sprintf("🎈 >> Step 3 Info.plist Done!"))
+	fmt.Println(fmt.Sprintf("🎈 >> Info.plist Done!"))
 
-	fmt.Println(fmt.Sprintf("📢 >> Step 4 Application Create..."))
+	fmt.Println(fmt.Sprintf("📢 >> Application Create..."))
 	if err := mac.ToApp(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> Application Bundle Fail!!!"))
 		return err
 	}
-	fmt.Println(fmt.Sprintf("📢 >> Step 4 Application Bundle Done!"))
+	fmt.Println(fmt.Sprintf("📢 >> Application Bundle Done!"))
 
-	fmt.Println(fmt.Sprintf("⌛  >> Step 5 Application DMG Create..."))
+	fmt.Println(fmt.Sprintf("⌛ >> Application DMG Create..."))
 	if err := mac.ToDmg(); err != nil {
 		fmt.Println(fmt.Sprintf("💔 >> Application DMG Create Fail!!!"))
 		return err
 	}
-	fmt.Println(fmt.Sprintf("⌛  >> Step 5 Application DMG Done!"))
+	fmt.Println(fmt.Sprintf("⌛ >> Application DMG Done!"))
 
-	fmt.Println(fmt.Sprintf("🛁 >> Step 6 Application Consist Create..."))
-	fmt.Println(fmt.Sprintf("🛁 >> Step 6 Application Consist Done!"))
+	fmt.Println(fmt.Sprintf("🛁 >> Application Consist Create..."))
+	fmt.Println(fmt.Sprintf("🛁 >> Application Consist Done!"))
 
 	fmt.Println(fmt.Sprintf("💖 >> 💖💖💖💖💖💖"))
 	return nil
@@ -193,11 +193,20 @@ const (
 )
 
 func (m *macApplication) ToICON() (err error) {
+	base := p.Ext(m.icon)
+	if base == ".icns" {
+		// 直接拷贝至对应目录下
+		dst, _ := os.Open(m.icon)
+		src := filepath.Join(m.resourcePath, appICON)
+		f, _ := os.OpenFile(src, os.O_RDWR|os.O_CREATE, 0755)
+		_, _ = io.Copy(f, dst)
+		return
+	}
 	path := filepath.Join("./", iconSet)
 	_ = os.MkdirAll(path, perm)
-	base := p.Ext(m.icon)
+
 	if base != ".png" {
-		return errors.New("图标需是 PNG 格式")
+		return errors.New("图标格式需是 PNG 格式")
 	}
 	sizes := []int{64, 128, 256, 512}
 	for i, size := range sizes {

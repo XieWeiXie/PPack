@@ -2,3 +2,15 @@
 <h1 align="center">PPack</h1>
 <p align="center"><strong>用 Go 打包网页生成 Mac 桌面 应用</strong></p>
 <p align="center"><strong>原理：使用 webview 将目标网页打包成可执行文件，再根据 Mac 应用的构成，设置对应的图标和应用说明，打包成 dmg 格式的文件</strong></p>
+
+
+## 特征
+
+- 小，足够小
+
+## 示例
+
+
+<p>WeRead
+    <a href="https://github.com/tw93/Pake/releases/latest/download/WeRead.dmg">Mac</a>
+</p>
