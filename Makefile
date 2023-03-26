@@ -8,23 +8,23 @@ VERSION ?= v1.0.0-$(COMMIT)
 URL ?=https://www.douyin.com/
 VARS    := -X main.URL=$(URL)
 
-APPNAME ?= app
-ICONNAME ?= app.icns
-APPVARS := -X main.APPName=$(APPNAME) -X main.ICONName=$(ICONNAME)
+APP_NAME ?= app
+ICON_NAME ?= app.icns
+APP_VARS := -X main.APPName=$(APP_NAME) -X main.ICONName=$(ICON_NAME)
 
 BUILD_ARGS = -v -gcflags="all=-N -l" -ldflags '$(VARS)'
-APP_RUN_ARGS = -v -gcflags="all=-N -l" -ldflags '$(APPVARS)'
+APP_RUN_ARGS = -v -gcflags="all=-N -l" -ldflags '$(APP_VARS)'
 
 export GO111MODULE=on
 
-GO_RUN_BUILD := go build $(BUILD_ARGS) -o $(APPNAME) ./binary/main.go
-PPAACk_RUN_BINARY := go run $(APP_RUN_ARGS) main.go
-CLEAR_RUN := rm $(APPNAME)
+GO_RUN_BUILD := go build $(BUILD_ARGS) -o $(APP_NAME) ./binary/main.go
+PACK_RUN_BINARY := go run $(APP_RUN_ARGS) main.go
+CLEAR_RUN := rm $(APP_NAME)
 
 default: app
 
 app: build
-	$(PPAACk_RUN_BINARY)
+	$(PACK_RUN_BINARY)
 	$(CLEAR_RUN)
 
 build:

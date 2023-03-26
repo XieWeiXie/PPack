@@ -84,16 +84,16 @@
 
 ```shell
 
-make app URL=https://weread.qq.com/ APPNAME=weread ICONNAME=weread.icns
+make app URL=https://weread.qq.com/ APP_NAME=weread ICON_NAME=weread.icns
 
-make app URL=https://www.xiaohongshu.com/ APPNAME=xiaohongshu ICONNAME=xiaohongshu.icns
+make app URL=https://www.xiaohongshu.com/ APP_NAME=xiaohongshu ICON_NAME=xiaohongshu.icns
 
-make app URL=https://typst.app/ APPNAME=typst ICONNAME=typst.icns
+make app URL=https://typst.app/ APP_NAME=typst ICON_NAME=typst.icns
 
-make app URL=https://www.douyin.com/ APPNAME=douyin ICONNAME=app.icns
+make app URL=https://www.douyin.com/ APP_NAME=douyin ICON_NAME=app.icns
 
 ```
 
 - URL 目标网站
-- APPNAME 应用名称
-- ICONNAME 应用图标
+- APP_NAME 应用名称
+- ICON_NAME 应用图标
