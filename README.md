@@ -8,31 +8,32 @@
 
 - 小，足够小
 
-<table>
-    <tr>
+
+<table align="center">
+    <tr align="left">
         <th> APP </th>
         <th> SIZE </th>
         <th> LINK</th>
     </tr>
-    <tr>
+    <tr align="left">
         <td>WeRead</td>
         <td>1.9MB</td>
-        <td> <a href="https://www.baidu.com">WeRead </a></td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/WEREAD.dmg">WeRead </a></td>
     </tr>
-    <tr>
+    <tr align="left">
         <td>DouYin</td>
         <td>2.6MB</td>
-        <td> <a href="https://www.baidu.com">WeRead </a></td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/DOUYIN.dmg"> DouYin </a></td>
     </tr>
-    <tr>
+    <tr align="left">
         <td>Typst</td>
         <td>1.9MB</td>
-        <td> <a href="https://www.baidu.com">WeRead </a></td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/TYPST.dmg"> Typst </a></td>
     </tr>
-    <tr>
+    <tr align="left">
         <td>XiaoHongShu</td>
         <td>1.9MB</td>
-        <td> <a href="https://www.baidu.com">WeRead </a></td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/XIAOHONGSHU.dmg"> XiaoHongShu </a></td>
     </tr>
 </table>
 
