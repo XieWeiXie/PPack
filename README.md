@@ -93,7 +93,7 @@ make app URL=https://chat.openai.com/ APP_NAME=chatgpt ICON_NAME=chatgpt.icns
 <p align="center"> <a href="https://weread.qq.com/"> WeRead </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/505e4632d06c9987bbca69f7a815d3ae.jpg" alt="WeRead"
+<img src="https://i.hd-r.cn/505e4632d06c9987bbca69f7a815d3ae.jpg" alt="WeRead">
 </p>
 
 <p align="center"> <a href="https://www.douyin.com/"> DouYin </a>
