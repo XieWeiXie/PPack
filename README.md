@@ -7,6 +7,7 @@
 ## 特征
 
 - 小，非常小，足够小
+- 快，非常快，足够快
 
 
 <body>
@@ -18,28 +19,33 @@
     </tr>
     <tr align="left">
         <td> WeRead </td>
-        <td> 1.9MB </td>
+        <td> 1.9 MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/WEREAD.dmg"> WeRead.dmg </a></td>
     </tr>
     <tr align="left">
         <td> DouYin </td>
-        <td> 2.6MB </td>
+        <td> 2.6 MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/DOUYIN.dmg"> DouYin.dmg </a></td>
     </tr>
     <tr align="left">
         <td> Typst </td>
-        <td> 1.9MB </td>
+        <td> 1.9 MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/TYPST.dmg"> Typst.dmg </a></td>
     </tr>
     <tr align="left">
         <td> XiaoHongShu </td>
-        <td> 1.9MB </td>
+        <td> 1.9 MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/XIAOHONGSHU.dmg"> XiaoHongShu.dmg </a></td>
     </tr>
     <tr>
         <td> RaySo </td>
-        <td> 2MB </td>
+        <td> 2 MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/RAYSO.dmg" > RaySo.dmg </a>  </td>
+    </tr>
+    <tr>
+        <td> ChatGPT </td>
+        <td> 2.3 MB </td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/CHATGPT.dmg" > ChatGPT.dmg </a>  </td>
     </tr>
 </table>
 </body>
@@ -54,13 +60,7 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 
 
 ## 使用
@@ -74,6 +74,10 @@ make app URL=https://www.xiaohongshu.com/ APP_NAME=xiaohongshu ICON_NAME=xiaohon
 make app URL=https://typst.app/ APP_NAME=typst ICON_NAME=typst.icns
 
 make app URL=https://www.douyin.com/ APP_NAME=douyin ICON_NAME=app.icns
+
+make app URL=https://ray.so/ APP_NAME=rayso ICON_NAME=raycast.icns
+
+make app URL=https://chat.openai.com/ APP_NAME=chatgpt ICON_NAME=chatgpt.icns
 
 ```
 
@@ -115,4 +119,10 @@ make app URL=https://www.douyin.com/ APP_NAME=douyin ICON_NAME=app.icns
 <br>
 <br>
 <img src="https://i.hd-r.cn/7fdcc99e368e686a8838bf129691637d.jpg" alt="RaySo">
+</p>
+
+<p align="center"> <a href="https://chat.openai.com/" > ChatGPT </a>
+<br>
+<br>
+<img src="https://i.hd-r.cn/918b673a95d4a01da1b5d002d43df833.jpg" alt="RaySo">
 </p>

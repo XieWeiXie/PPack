@@ -3,4 +3,4 @@ bin/*
 .DS_Store
 *.dmg
 *.png
-*.icns
+#*.icns
