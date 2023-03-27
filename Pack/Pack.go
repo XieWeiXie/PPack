@@ -75,7 +75,7 @@ func Do(mac ToApplication) error {
 	fmt.Println(fmt.Sprintf("🛁 >> Application Consist Create..."))
 	fmt.Println(fmt.Sprintf("🛁 >> Application Consist Done!"))
 
-	fmt.Println(fmt.Sprintf("💖 >> 💖💖💖💖💖💖"))
+	fmt.Println(fmt.Sprintf("💖 >> Done!"))
 	return nil
 }
 

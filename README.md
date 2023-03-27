@@ -6,7 +6,7 @@
 
 ## 特征
 
-- 小，足够小
+- 小，非常小，足够小
 
 
 <body>
@@ -17,24 +17,29 @@
         <th> LINK</th>
     </tr>
     <tr align="left">
-        <td>WeRead</td>
-        <td>1.9MB</td>
-        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/WEREAD.dmg">WeRead.dmg </a></td>
+        <td> WeRead </td>
+        <td> 1.9MB </td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/WEREAD.dmg"> WeRead.dmg </a></td>
     </tr>
     <tr align="left">
-        <td>DouYin</td>
-        <td>2.6MB</td>
+        <td> DouYin </td>
+        <td> 2.6MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/DOUYIN.dmg"> DouYin.dmg </a></td>
     </tr>
     <tr align="left">
-        <td>Typst</td>
-        <td>1.9MB</td>
+        <td> Typst </td>
+        <td> 1.9MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/TYPST.dmg"> Typst.dmg </a></td>
     </tr>
     <tr align="left">
-        <td>XiaoHongShu</td>
-        <td>1.9MB</td>
+        <td> XiaoHongShu </td>
+        <td> 1.9MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/XIAOHONGSHU.dmg"> XiaoHongShu.dmg </a></td>
+    </tr>
+    <tr>
+        <td> RaySo </td>
+        <td> 2MB </td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/RAYSO.dmg" > RaySo.dmg </a>  </td>
     </tr>
 </table>
 </body>
@@ -48,36 +53,6 @@
 <br/>
 <br/>
 <br/>
-
-
-## 示例
-
-<h4 > 常见打包示例 </h4>
-<p align="center"> <a href="https://weread.qq.com/"> WeRead </a>
-<br>
-<br>
-<img src="https://i.hd-r.cn/505e4632d06c9987bbca69f7a815d3ae.jpg">
-</p>
-
-<p align="center"> <a href="https://www.douyin.com/"> DouYin </a>
-<br>
-<br>
-<img src="https://i.hd-r.cn/a6e7128f797ccb1b8cd16d64adffbab5.jpg">
-</p>
-
-
-<p align="center"> <a href="https://typst.app/"> Typst </a>
-<br>
-<br>
-<img src="https://i.hd-r.cn/ebb08696a60be3a8431135068afe475c.jpg">
-</p>
-
-<p align="center"> <a href="https://www.xiaohongshu.com/"> XiaoHongShu </a>
-<br>
-<br>
-<img src="https://i.hd-r.cn/93aa0d740282ef574047bc88457f2b21.jpg">
-</p>
-
 
 
 ## 使用
@@ -97,3 +72,39 @@ make app URL=https://www.douyin.com/ APP_NAME=douyin ICON_NAME=app.icns
 - URL 目标网站
 - APP_NAME 应用名称
 - ICON_NAME 应用图标
+
+
+
+## 示例
+
+<h4 > 常见打包示例 </h4>
+<p align="center"> <a href="https://weread.qq.com/"> WeRead </a>
+<br>
+<br>
+<img src="https://i.hd-r.cn/505e4632d06c9987bbca69f7a815d3ae.jpg" alt="WeRead" width="1200px" height="780px">
+</p>
+
+<p align="center"> <a href="https://www.douyin.com/"> DouYin </a>
+<br>
+<br>
+<img src="https://i.hd-r.cn/a6e7128f797ccb1b8cd16d64adffbab5.jpg" alt="DouYin" width="1200px" height="780px">
+</p>
+
+
+<p align="center"> <a href="https://typst.app/"> Typst </a>
+<br>
+<br>
+<img src="https://i.hd-r.cn/ebb08696a60be3a8431135068afe475c.jpg" alt="Typst" width="1200px" height="780px">
+</p>
+
+<p align="center"> <a href="https://www.xiaohongshu.com/"> XiaoHongShu </a>
+<br>
+<br>
+<img src="https://i.hd-r.cn/93aa0d740282ef574047bc88457f2b21.jpg" alt="XiaoHongShu" width="1200px" height="780px">
+</p>
+
+<p align="center"> <a href="https://ray.so/" > RaySo </a>
+<br>
+<br>
+<img src="https://i.hd-r.cn/7fdcc99e368e686a8838bf129691637d.jpg" alt="RaySo" width="1200px" height="780px">
+</p>
