@@ -53,6 +53,14 @@
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 ## 使用
@@ -81,30 +89,30 @@ make app URL=https://www.douyin.com/ APP_NAME=douyin ICON_NAME=app.icns
 <p align="center"> <a href="https://weread.qq.com/"> WeRead </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/505e4632d06c9987bbca69f7a815d3ae.jpg" alt="WeRead" width="1200px" height="780px">
+<img src="https://i.hd-r.cn/505e4632d06c9987bbca69f7a815d3ae.jpg" alt="WeRead"
 </p>
 
 <p align="center"> <a href="https://www.douyin.com/"> DouYin </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/a6e7128f797ccb1b8cd16d64adffbab5.jpg" alt="DouYin" width="1200px" height="780px">
+<img src="https://i.hd-r.cn/a6e7128f797ccb1b8cd16d64adffbab5.jpg" alt="DouYin">
 </p>
 
 
 <p align="center"> <a href="https://typst.app/"> Typst </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/ebb08696a60be3a8431135068afe475c.jpg" alt="Typst" width="1200px" height="780px">
+<img src="https://i.hd-r.cn/ebb08696a60be3a8431135068afe475c.jpg" alt="Typst">
 </p>
 
 <p align="center"> <a href="https://www.xiaohongshu.com/"> XiaoHongShu </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/93aa0d740282ef574047bc88457f2b21.jpg" alt="XiaoHongShu" width="1200px" height="780px">
+<img src="https://i.hd-r.cn/93aa0d740282ef574047bc88457f2b21.jpg" alt="XiaoHongShu">
 </p>
 
 <p align="center"> <a href="https://ray.so/" > RaySo </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/7fdcc99e368e686a8838bf129691637d.jpg" alt="RaySo" width="1200px" height="780px">
+<img src="https://i.hd-r.cn/7fdcc99e368e686a8838bf129691637d.jpg" alt="RaySo">
 </p>
