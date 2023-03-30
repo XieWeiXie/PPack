@@ -89,11 +89,18 @@ make app URL=https://ray.so/ APP_NAME=rayso ICON_NAME=raycast.icns
 
 make app URL=https://chat.openai.com/ APP_NAME=chatgpt ICON_NAME=chatgpt.icns
 
+make app URL=https://weibo.com/ APP_NAME=weibo ICON_NAME=weibo.png
 ```
 
 - URL 目标网站
 - APP_NAME 应用名称
 - ICON_NAME 应用图标
+
+
+## 图标
+
+- [iconFinder](https://www.iconfinder.com/)
+- [macosIcons](https://macosicons.com/#/)
 
 
 
