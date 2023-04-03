@@ -102,6 +102,10 @@ make app URL=https://weibo.com/ APP_NAME=weibo ICON_NAME=weibo.png
 - [iconFinder](https://www.iconfinder.com/)
 - [macosIcons](https://macosicons.com/#/)
 
+## 自制图标
+
+- [Bakery - Simple Icon Creator](https://apps.apple.com/us/app/bakery-simple-icon-creator/id1575220747?mt=12)
+
 
 
 ## 示例
