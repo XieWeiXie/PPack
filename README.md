@@ -8,7 +8,7 @@
 
 - 小，非常小，足够小
 - 快，非常快，足够快
-
+- 简单，非常简单，足够简单
 
 <body>
 <table align="left">
@@ -46,6 +46,11 @@
         <td> ChatGPT </td>
         <td> 2.3 MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/CHATGPT.dmg" > ChatGPT.dmg </a>  </td>
+    </tr>
+    <tr>
+        <td> Godoc </td>
+        <td> 1.9 MB </td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/GoDoc.dmg" > Godoc.dmg </a>  </td>
     </tr>
 </table>
 </body>
@@ -145,5 +150,12 @@ make app URL=https://weibo.com/ APP_NAME=weibo ICON_NAME=weibo.png
 <p align="center"> <a href="https://chat.openai.com/" > ChatGPT </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/918b673a95d4a01da1b5d002d43df833.jpg" alt="RaySo">
+<img src="https://i.hd-r.cn/918b673a95d4a01da1b5d002d43df833.jpg" alt="ChatGPT">
+</p>
+
+
+<p align="center"> <a href=https://pkg.go.dev/" > Godoc </a>
+<br>
+<br>
+<img src="https://i.hd-r.cn/31b9931320ccc73fb43ea8d9dbe4b17c.jpg" alt="Godoc">
 </p>
