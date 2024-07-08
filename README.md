@@ -119,43 +119,43 @@ make app URL=https://weibo.com/ APP_NAME=weibo ICON_NAME=weibo.png
 <p align="center"> <a href="https://weread.qq.com/"> WeRead </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/505e4632d06c9987bbca69f7a815d3ae.jpg" alt="WeRead">
+<img src="./app/weread.jpg" alt="WeRead">
 </p>
 
 <p align="center"> <a href="https://www.douyin.com/"> DouYin </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/a6e7128f797ccb1b8cd16d64adffbab5.jpg" alt="DouYin">
+<img src="./app/douyin2.jpg" alt="DouYin">
 </p>
 
 
 <p align="center"> <a href="https://typst.app/"> Typst </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/ebb08696a60be3a8431135068afe475c.jpg" alt="Typst">
+<img src="./app/typst.jpg" alt="Typst">
 </p>
 
 <p align="center"> <a href="https://www.xiaohongshu.com/"> XiaoHongShu </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/93aa0d740282ef574047bc88457f2b21.jpg" alt="XiaoHongShu">
+<img src="./app/xiaohongshu.jpg" alt="XiaoHongShu">
 </p>
 
 <p align="center"> <a href="https://ray.so/" > RaySo </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/7fdcc99e368e686a8838bf129691637d.jpg" alt="RaySo">
+<img src="./app/rayso.jpg" alt="RaySo">
 </p>
 
 <p align="center"> <a href="https://chat.openai.com/" > ChatGPT </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/918b673a95d4a01da1b5d002d43df833.jpg" alt="ChatGPT">
+<img src="./app/chatgpt.jpg" alt="ChatGPT">
 </p>
 
 
 <p align="center"> <a href=https://pkg.go.dev/" > Godoc </a>
 <br>
 <br>
-<img src="https://i.hd-r.cn/31b9931320ccc73fb43ea8d9dbe4b17c.jpg" alt="Godoc">
+<img src="./app/godoc.jpg" alt="Godoc">
 </p>
