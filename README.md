@@ -52,6 +52,11 @@
         <td> 1.9 MB </td>
         <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/GoDoc.dmg" > Godoc.dmg </a>  </td>
     </tr>
+    <tr>
+        <td> Httpie </td>
+        <td> 1.8 MB </td>
+        <td> <a href="https://github.com/XieWeiXie/PPack/releases/download/v1.0.0/HTTPIE.dmg" > HTTPIE.dmg </a>  </td>
+    </tr>
 </table>
 </body>
 
@@ -158,4 +163,11 @@ make app URL=https://weibo.com/ APP_NAME=weibo ICON_NAME=weibo.png
 <br>
 <br>
 <img src="./app/godoc.jpg" alt="Godoc">
+</p>
+
+
+<p align="left"> <a href=https://httpie.io/app" > Httpie </a>
+<br>
+<br>
+<img src="./app/httpie.jpg" alt="Httpie">
 </p>
